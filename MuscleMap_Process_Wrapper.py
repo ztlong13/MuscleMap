@@ -75,6 +75,19 @@ def MuscleMap_Measure(ROI_arr,Param,ROI_dict,Output_File,QY_ID,Param_ID,ROI_ID):
 MRRCdata_Root = r'/var/tmp/windowsdir/ztlong_MRRCdata/PlantarFasciitis/Data'
 QY_ID = 'QY_ID'
 
+
+
+ROI_dict = {}
+ROI_dict ={
+    "FDB": 1,
+    "FatPad": 2,
+    "QP": 3,
+    "ABD": 4,
+    "MedGas": 5,
+    "LatGas": 6,
+    "MedSol": 7
+}
+
 wT2_Calf,PDFF_Calf = Read_Maps(MRRCdata_Root,QY_ID)
 
 MedGas,LatGas,MedSol = MuscleMap_Read(MRRCdata_Root,QY_ID)
